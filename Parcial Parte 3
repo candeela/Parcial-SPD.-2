@@ -1,0 +1,13 @@
+A mi me toco el Fotodiodo
+Lo que hice fue conectarlo y programarlo para que cuando se aplica una cierta cantida de energía mayor a la establecida, el contador se vuelve a 0 y se prende un led.
+Cuando la energía ejercida sea menor el led se apaga y te permite utilizar nuevamente los pulsadores. 
+Código
+if(fotodiodo > 80)
+    {
+    contador = 0;
+    digitalWrite(LED, HIGH);
+  }
+    else{
+      digitalWrite(LED, LOW);
+    
+    }
